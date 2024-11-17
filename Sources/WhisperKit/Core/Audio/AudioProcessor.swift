@@ -715,9 +715,9 @@ public class AudioProcessor: NSObject, AudioProcessing {
                 }
             }
 
-            //if inputChannels > 0 {
+            if inputChannels > 0 {
                 devices.append(AudioDevice(id: deviceID, name: deviceName))
-            //}
+            }
         }
 
         return devices
